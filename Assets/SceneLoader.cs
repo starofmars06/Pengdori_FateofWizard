@@ -1,0 +1,67 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SceneLoader : MonoBehaviour
+{
+    public Animator transition;
+    public float transitionTime = 2f;
+
+    void Update()
+    {
+        // 01. 인트로 시퀀스에 대한 화면 전환
+        if (SceneManager.GetActiveScene().name == "01Logo") //&& Input.GetMouseButtonDown(0))
+        {
+            LoadTitleScene();
+        }
+
+        
+        if (SceneManager.GetActiveScene().name == "02Title" && Input.GetMouseButtonDown(0))
+        {
+            LoadMainScene();
+        }
+        
+    }
+
+    public void LoadTitleScene()
+    {
+        StartCoroutine(LoadTitle());
+    }
+
+    IEnumerator LoadTitle()
+    {
+        //기다리기
+        yield return new WaitForSeconds(2);
+
+        //애니메이션 시작
+        transition.SetTrigger("Start");
+
+        //기다리기
+        yield return new WaitForSeconds(transitionTime);
+
+        //씬 적용하기
+        SceneManager.LoadScene("02Title");
+    }
+
+    
+    public void LoadMainScene()
+    {
+        StartCoroutine(LoadMain());
+    }
+
+    IEnumerator LoadMain()
+    {
+        //애니메이션 시작
+        transition.SetTrigger("Start");
+
+        //기다리기
+        yield return new WaitForSeconds(transitionTime);
+
+        //씬 적용하기
+        SceneManager.LoadScene("03Main");
+    }
+    
+}
+
+
