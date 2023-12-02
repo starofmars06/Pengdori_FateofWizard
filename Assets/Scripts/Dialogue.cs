@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -64,6 +65,12 @@ public class Dialogue : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+
+            if (SceneManager.GetActiveScene().name == "04_1Intro")
+            {
+                SceneManager.LoadScene("05Lobby");
+            }
+                
         }
     }
 }

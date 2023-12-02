@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public void SwitchToLobby()
+    {
+        SceneManager.LoadScene("05Lobby");
+    }
+
     public void SwitchToMagicPlantScene()
     {
         SceneManager.LoadScene("Plant_temp");
@@ -10,11 +15,16 @@ public class ChangeScene : MonoBehaviour
 
     public void SwitchToMagicPotionScene()
     {
-        SceneManager.LoadScene("Potion_temp");
+        SceneManager.LoadScene("PotionScene");
     }
 
     public void SwitchToMagicFightScene()
     {
         SceneManager.LoadScene("Fight_Test");
+    }
+
+    public void SwitchToMagicPracticeScene()
+    {
+        SceneManager.LoadScene("HandTracking_Test");
     }
 }
