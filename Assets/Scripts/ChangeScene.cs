@@ -10,21 +10,21 @@ public class ChangeScene : MonoBehaviour
 
     public void SwitchToMagicPlantScene()
     {
-        SceneManager.LoadScene("Plant_temp");
+        SceneManager.LoadScene("06_0Plant");
     }
 
     public void SwitchToMagicPotionScene()
     {
-        SceneManager.LoadScene("PotionScene");
+        SceneManager.LoadScene("07_0PotionScene");
     }
 
     public void SwitchToMagicFightScene()
     {
-        SceneManager.LoadScene("Fight_Test");
+        SceneManager.LoadScene("08_1Fight_Test");
     }
 
     public void SwitchToMagicPracticeScene()
     {
-        SceneManager.LoadScene("HandTracking_Test");
+        SceneManager.LoadScene("09_1HandTracking_Test");
     }
 }

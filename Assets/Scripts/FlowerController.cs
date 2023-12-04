@@ -75,47 +75,32 @@ public class FlowerController : MonoBehaviour
 
     IEnumerator WaitAndSwitchScene1()
     {
-        // 효과음 재생
-       // if (audioSource != null)
-        //{
-            //audioSource.Play();
-        //}
 
         // 3초 대기
         yield return new WaitForSeconds(3f);
 
         // 다른 씬으로 전환
-        SceneManager.LoadScene("Plant_temp_1");
+        SceneManager.LoadScene("06_1Plant");
     }
 
     IEnumerator WaitAndSwitchScene2()
     {
-        // 효과음 재생
-        //if (audioSource != null)
-        //{
-            //audioSource.Play();
-       // }
 
         // 3초 대기
         yield return new WaitForSeconds(3f);
 
         // 다른 씬으로 전환
-        SceneManager.LoadScene("Plant_temp_2");
+        SceneManager.LoadScene("06_2Plant");
     }
 
     IEnumerator WaitAndSwitchScene3()
     {
-        // 효과음 재생
-        //if (audioSource != null)
-        //{
-            //audioSource.Play();
-       //}
 
         // 3초 대기
         yield return new WaitForSeconds(3f);
 
         // 다른 씬으로 전환
-        SceneManager.LoadScene("Plant_temp_3");
+        SceneManager.LoadScene("06_3Plant");
     }
 
 }

@@ -56,7 +56,7 @@ public class GetPinkFlower : MonoBehaviour
             plantNum = PlayerPrefs.GetInt("PlantPinkNum"); // PlantPinkNum에 저장된 값 plantNum에 넣음
             PlayerPrefs.SetInt("PlantPinkNum", plantNum + plantRandomGet); // plantNum + plantRandomGet 한 결과를 PlantPinkNum에 저장함
 
-            SceneManager.LoadScene("Plant_temp_result");
+            SceneManager.LoadScene("06_9Plant_result");
         }
         else if (deltaAcceleration.sqrMagnitude >= shakeThreshold2 * shakeThreshold2) // 2.5 세기 이상으로 흔들린 경우
         {
