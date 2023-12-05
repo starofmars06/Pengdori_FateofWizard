@@ -12,6 +12,8 @@ public class GetSkyblueFlower : MonoBehaviour
     private Vector3 deltaAcceleration;
     private int plantNum;
     private int plantRandomGet;
+    private int magicPowerNum;
+    private int magicPowerGet;
     GameObject[] effectObj;
 
 
@@ -23,6 +25,15 @@ public class GetSkyblueFlower : MonoBehaviour
             obj.SetActive(false);
         }
 
+        if (!PlayerPrefs.HasKey("PlantOrangeNum")) // (이 디바이스에 PlantOrangeNum을 한번이라도 저장한 적이 있는가)의 반대
+        {
+            PlayerPrefs.SetInt("PlantOrangeNum", 0); // 이 디바이스에 PlantOrangeNum을 저장한 적이 없다면 0 저장
+        }
+        if (!PlayerPrefs.HasKey("PlantOrangeRandom"))
+        {
+            PlayerPrefs.SetInt("PlantOrangeRandom", 0);
+        }
+
         if (!PlayerPrefs.HasKey("PlantSkyblueNum")) // (이 디바이스에 PlantSkyblueNum을 한번이라도 저장한 적이 있는가)의 반대
         {
             PlayerPrefs.SetInt("PlantSkyblueNum", 0); // 이 디바이스에 PlantSkyblueNum을 저장한 적이 없다면 0 저장
@@ -30,6 +41,15 @@ public class GetSkyblueFlower : MonoBehaviour
         if (!PlayerPrefs.HasKey("PlantSkyblueRandom"))
         {
             PlayerPrefs.SetInt("PlantSkyblueRandom", 0);
+        }
+
+        if (!PlayerPrefs.HasKey("PlantPinkNum")) // (이 디바이스에 PlantPinkNum을 한번이라도 저장한 적이 있는가)의 반대
+        {
+            PlayerPrefs.SetInt("PlantPinkNum", 0); // 이 디바이스에 PlantPinkNum을 저장한 적이 없다면 0 저장
+        }
+        if (!PlayerPrefs.HasKey("PlantPinkRandom"))
+        {
+            PlayerPrefs.SetInt("PlantPinkRandom", 0);
         }
     }
 
@@ -55,6 +75,14 @@ public class GetSkyblueFlower : MonoBehaviour
 
             plantNum = PlayerPrefs.GetInt("PlantSkyblueNum"); // PlantSkyblueNum에 저장된 값 plantNum에 넣음
             PlayerPrefs.SetInt("PlantSkyblueNum", plantNum + plantRandomGet); // plantNum + plantRandomGet 한 결과를 PlantSkyblueNum에 저장함
+
+            PlayerPrefs.SetInt("PlantPinkRandom", 0);
+            PlayerPrefs.SetInt("PlantOrangeRandom", 0);
+
+            magicPowerGet = 10; // MagicPower 얻는 부분
+            PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
+            magicPowerNum = PlayerPrefs.GetInt("MagicPower");
+            PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);
 
             SceneManager.LoadScene("06_9Plant_result");
         }

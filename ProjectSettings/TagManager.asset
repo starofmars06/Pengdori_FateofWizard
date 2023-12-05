@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pet
+  - Monster
+  - flower1
+  - flower2
+  - flower3
+  - flower4
   layers:
   - Default
   - TransparentFX

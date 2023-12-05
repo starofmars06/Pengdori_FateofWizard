@@ -472,10 +472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66fb2f2a82ce7434eb707395ea7e3c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeThreshold1: 6.5
-  shakeThreshold2: 2.5
-  plantNum: 0
-  plantRandomGet: 0
 --- !u!1 &1602641444
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,6 +564,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 16.61, y: 0, z: 0}
+--- !u!1001 &2692696088391319535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15297577
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999964
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0008726012
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869920221081730097, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652548011876289459, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
+      propertyPath: m_Name
+      value: 3D Plantroom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 919a2b11dc43cfc408f43f381451dabb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -576,3 +629,4 @@ SceneRoots:
   - {fileID: 308299676}
   - {fileID: 374455580}
   - {fileID: 117994357}
+  - {fileID: 2692696088391319535}

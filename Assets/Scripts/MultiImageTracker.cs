@@ -64,15 +64,4 @@ public class MultiImageTracker : MonoBehaviour
 
         spawnedObject[referenceImageName].SetActive(true);
     }
-
-
-    void Start()
-    {
-        
-    } 
-
-    void Update()
-    {
-        
-    }
 }
