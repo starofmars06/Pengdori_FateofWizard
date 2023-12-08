@@ -34,19 +34,19 @@ public class FightBoss : MonoBehaviour
         {
             SpawnObject1();
 
-            monsterHealth--;
+            monsterHealth -= 2;
         }
         else if(currentGesture == ManoGestureTrigger.SWIPE_RIGHT)
         {
             SpawnObject2();
 
-            monsterHealth--;
+            monsterHealth -= 2;
         }
         else if (currentGesture == ManoGestureTrigger.PICK)
         {
             SpawnObject3();
 
-            monsterHealth--;
+            monsterHealth -= 2;
         }
 
 
