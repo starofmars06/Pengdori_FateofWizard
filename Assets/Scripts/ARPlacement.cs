@@ -8,6 +8,7 @@ public class ARPlacement : MonoBehaviour
 {
     public GameObject arObjectToSpawn;
     public GameObject placementIndicator;
+    public GameObject magic;
 
     private Pose PlacementPose;
     private GameObject spawnedObject;
@@ -19,6 +20,10 @@ public class ARPlacement : MonoBehaviour
     {
         // ARRaycastManager를 찾아와서 할당
         aRRaycastManager = FindObjectOfType<ARRaycastManager>();
+
+        // 처음에 공격상태 비활성화
+        magic.SetActive(false);
+
     }
 
 
@@ -28,6 +33,7 @@ public class ARPlacement : MonoBehaviour
         if (spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             ARPlaceObject(); // 몬스터 생성
+            magic.SetActive(true); // 공격 상태 활성화
         }
 
         // 배치 위치 계산하기

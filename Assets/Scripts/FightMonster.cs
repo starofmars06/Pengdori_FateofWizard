@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class FightMonster: MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class FightMonster: MonoBehaviour
     [SerializeField] private GameObject aRObject1;
     [SerializeField] private GameObject aRObject2;
     [SerializeField] private GameObject aRObject3;
+
+    public Text healthText; // UI Text 오브젝트를 인스펙터에서 연결
 
     //일반 몬스터 체력
     int monsterHealth = 5;
@@ -52,7 +55,15 @@ public class FightMonster: MonoBehaviour
             SceneManager.LoadScene("08_2Fight_Win");
         }
 
+        UpdateHealthUI(); // 매 프레임마다 체력을 업데이트
 
+
+    }
+
+    // UI Text 업데이트
+    void UpdateHealthUI()
+    {
+        healthText.text = "몬스터 체력: " + monsterHealth.ToString();
     }
 
     //첫번째 마법
