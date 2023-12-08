@@ -21,7 +21,13 @@ public class SceneLoader : MonoBehaviour
         {
             LoadMainScene();
         }
-        
+
+        // 11. 최종보스 물리친 후 이동
+        if (SceneManager.GetActiveScene().name == "11_3Win" && Input.GetMouseButtonDown(0))
+        {
+            LoadFinalScene();
+        }
+
     }
 
     public void LoadTitleScene()
@@ -61,7 +67,24 @@ public class SceneLoader : MonoBehaviour
         //씬 적용하기
         SceneManager.LoadScene("03Main");
     }
-    
+
+    public void LoadFinalScene()
+    {
+        StartCoroutine(LoadFinal());
+    }
+
+    IEnumerator LoadFinal()
+    {
+        //애니메이션 시작
+        transition.SetTrigger("Start");
+
+        //기다리기
+        yield return new WaitForSeconds(transitionTime);
+
+        //씬 적용하기
+        SceneManager.LoadScene("11_4Ending");
+    }
+
 }
 
 

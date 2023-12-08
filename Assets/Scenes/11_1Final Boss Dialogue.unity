@@ -399,7 +399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312784357580409916, guid: df32b06bbff59bc429759c12c704cdeb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8647334333720256240, guid: df32b06bbff59bc429759c12c704cdeb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -767,7 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9be9f74c2c98f448dae161301b882c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 0}
+  textComponent: {fileID: 1421879618}
   lines:
   - "\uD30C\uD2B8\uB108, \uC9C0\uAE08\uAE4C\uC9C0 \uB10C \uD5D8\uB09C\uD55C \uC5EC\uC815\uC744
     \uB098\uC640 \uD568\uAED8 \uD574\uC654\uC9C0."

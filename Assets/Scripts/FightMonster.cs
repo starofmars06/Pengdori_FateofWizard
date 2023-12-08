@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SpawnObjectOnClick : MonoBehaviour
+public class FightMonster: MonoBehaviour
 {
     [SerializeField] private GameObject aRObject;
     [SerializeField] private GameObject aRObject1;
     [SerializeField] private GameObject aRObject2;
     [SerializeField] private GameObject aRObject3;
+
+    //일반 몬스터 체력
+    int monsterHealth = 5;
 
     // Update is called once per frame
     void Update()
@@ -18,25 +22,37 @@ public class SpawnObjectOnClick : MonoBehaviour
         ManoGestureTrigger currentGesture = gestureInfo.mano_gesture_trigger;
 
 
-        //마법 물약이 0개라면 실행되는 부분이 없어야 함.
-        
-
         if (currentGesture == ManoGestureTrigger.CLICK)
         {
             SpawnObject();
+            monsterHealth--;
         }
         else if(currentGesture == ManoGestureTrigger.GRAB_GESTURE)
         {
             SpawnObject1();
+
+            monsterHealth -= 2;
         }
         else if(currentGesture == ManoGestureTrigger.SWIPE_RIGHT)
         {
             SpawnObject2();
+
+            monsterHealth -= 2;
         }
         else if (currentGesture == ManoGestureTrigger.PICK)
         {
             SpawnObject3();
+
+            monsterHealth -= 2;
         }
+
+
+        if(monsterHealth <= 0)
+        {
+            SceneManager.LoadScene("08_2Fight_Win");
+        }
+
+
     }
 
     //첫번째 마법
