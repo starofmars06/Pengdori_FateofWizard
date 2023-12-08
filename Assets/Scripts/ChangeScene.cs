@@ -33,6 +33,11 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("10Inventory");
     }
 
+    public void SwitchToFinalBossScene()
+    {
+        SceneManager.LoadScene("11_1Final Boss Dialogue");
+    }
+
     //손동작 튜토리얼
     //다시 돌아가기
     public void goBackto_BeforeScene()

@@ -446,7 +446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 530}
+  m_AnchoredPosition: {x: 0, y: 95}
   m_SizeDelta: {x: 1000, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136074214
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB9C8\uBC95\uC0AC\uC758 \uC219\uBA85"
+  m_text: -The End-
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3aef57a7a6941d549b262dd444727478, type: 2}
   m_sharedMaterial: {fileID: -9209077724470067181, guid: 3aef57a7a6941d549b262dd444727478, type: 2}
@@ -941,8 +941,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -500}
-  m_SizeDelta: {x: 1000, y: 100}
+  m_AnchoredPosition: {x: 0, y: -136}
+  m_SizeDelta: {x: 1000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938814358
 MonoBehaviour:
@@ -992,7 +992,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.1
-  m_Text: "\uD654\uBA74\uC744 \uD130\uCE58\uD574\uC11C \uC2DC\uC791\uD574\uBCF4\uC138\uC694!"
+  m_Text: "\uB2F9\uC2E0\uC740 \uC138\uC0C1\uC758 \uD3C9\uD654\uB97C \uC9C0\uCF30\uC2B5\uB2C8\uB2E4.\n\uC5B4\uC5FF\uD55C
+    \uB9C8\uBC95\uC0AC\uB85C\uC11C \n\uC55E\uC73C\uB85C\uC758 \uB098\uB0A0\uB3C4
+    \uD589\uBCF5\uD558\uAE30\uB97C \uBC14\uB77C\uBA70.\n\n\n\n\uAC8C\uC784\uC744
+    \uD50C\uB808\uC774\uD574\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4.\n(\uD130\uCE58\uB97C
+    \uD558\uBA74 \uCC98\uC74C\uC73C\uB85C \uB3CC\uC544\uAC11\uB2C8\uB2E4.)"
 --- !u!222 &1938814360
 CanvasRenderer:
   m_ObjectHideFlags: 0

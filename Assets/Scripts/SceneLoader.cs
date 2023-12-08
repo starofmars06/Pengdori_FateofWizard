@@ -34,6 +34,12 @@ public class SceneLoader : MonoBehaviour
             LoadFinalScene();
         }
 
+        // 게임 엔딩
+        if (SceneManager.GetActiveScene().name == "12_1EndingCredits" && Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene("01Logo");
+        }
+
     }
 
     public void LoadTitleScene()

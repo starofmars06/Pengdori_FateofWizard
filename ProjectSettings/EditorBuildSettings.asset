@@ -57,6 +57,9 @@ EditorBuildSettings:
     path: Assets/Scenes/10Inventory.unity
     guid: 7b80a0fe811576a4b8a06ec1504aaf06
   - enabled: 1
+    path: Assets/Scenes/11_1Final Boss Dialogue.unity
+    guid: 612afea3982c1d140823b0e89ed197f6
+  - enabled: 1
     path: Assets/Scenes/11_2FinalBoss.unity
     guid: 3af2409215dc5ed41865f45e8215a848
   - enabled: 1
@@ -65,6 +68,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/11_4Ending.unity
     guid: 2bc9e264fdd30214abb82f999ec4a23c
+  - enabled: 1
+    path: Assets/Scenes/12_1EndingCredits.unity
+    guid: bdbe3df9881997d4a84bec3e7c7b958f
+  - enabled: 1
+    path: Assets/Scenes/01Logo.unity
+    guid: e48b2b2517664154cac2fb5be8f39b76
+  - enabled: 1
+    path: Assets/Scenes/02Title.unity
+    guid: 353bc977ee7bf994e916e328c994fc09
+  - enabled: 1
+    path: Assets/Scenes/03Main.unity
+    guid: a7719415b6cb5e24eb1fdb66bd61e88e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8e2c90a2124a03a43ab225ab3ef7a883, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d281836994ee52a4b81ef8851a82b03c, type: 2}
