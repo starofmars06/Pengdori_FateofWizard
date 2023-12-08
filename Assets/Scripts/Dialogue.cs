@@ -70,6 +70,10 @@ public class Dialogue : MonoBehaviour
             {
                 SceneManager.LoadScene("05Lobby");
             }
+            else if (SceneManager.GetActiveScene().name == "08_3AfterBattle")
+            {
+                SceneManager.LoadScene("05Lobby");
+            }
                 
         }
     }

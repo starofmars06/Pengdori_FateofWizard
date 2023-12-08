@@ -22,6 +22,12 @@ public class SceneLoader : MonoBehaviour
             LoadMainScene();
         }
 
+        //8. 일반 몬스터 물리친 후 이동
+        if (SceneManager.GetActiveScene().name == "08_2Fight_Win" && Input.GetMouseButtonDown(0))
+        {
+            LoadAfterBattleScene();
+        }
+
         // 11. 최종보스 물리친 후 이동
         if (SceneManager.GetActiveScene().name == "11_3Win" && Input.GetMouseButtonDown(0))
         {
@@ -68,6 +74,26 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("03Main");
     }
 
+    //일반 전투 후 이동
+    public void LoadAfterBattleScene()
+    {
+        StartCoroutine(LoadAfterBattle());
+    }
+
+    IEnumerator LoadAfterBattle()
+    {
+        //애니메이션 시작
+        transition.SetTrigger("Start");
+
+        //기다리기
+        yield return new WaitForSeconds(transitionTime);
+
+        //씬 적용하기
+        SceneManager.LoadScene("08_3AfterBattle");
+    }
+
+
+    //최종 보스 전투 후 이동
     public void LoadFinalScene()
     {
         StartCoroutine(LoadFinal());

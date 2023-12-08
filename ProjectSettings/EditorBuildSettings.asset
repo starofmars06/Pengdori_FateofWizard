@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/04_1Intro.unity
+    guid: 38e0f1d430b0d8742a9b885aff2c27c0
+  - enabled: 1
     path: Assets/Scenes/05Lobby.unity
     guid: fba9f45ef432b6a439d331a73529a9b9
   - enabled: 0
@@ -26,12 +29,30 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/06_9Plant_result.unity
     guid: ab89672e4bda4504ebd2e52f1a24f5ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/08_1Fight_Test.unity
     guid: 4a4273433e35d2045ace3ba2e765a140
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/08_2Fight_Win.unity
     guid: 91fa2e7c2e2430c46b9c54cc4beb3ca2
+  - enabled: 1
+    path: Assets/Scenes/08_3AfterBattle.unity
+    guid: 4b8cee826566e9949a7da83e2f9da29f
+  - enabled: 1
+    path: Assets/Scenes/09_1HandTracking_Test.unity
+    guid: 1e90a8bf9fd64fe4390b2bd28367faa0
+  - enabled: 1
+    path: Assets/Scenes/09_2HandTracking_Tutorial.unity
+    guid: cf79d38220f3a7a4db23b9249e0251ac
+  - enabled: 1
+    path: Assets/Scenes/09_2HandTracking_Tutorial 1.unity
+    guid: 344f0f3529478bd47bab710a24d9e25b
+  - enabled: 1
+    path: Assets/Scenes/09_2HandTracking_Tutorial 2.unity
+    guid: 782e4d053f66d8248879ae1fea14738e
+  - enabled: 1
+    path: Assets/Scenes/09_2HandTracking_Tutorial 3.unity
+    guid: f92bf42925b252a4cad26fbce90e2984
   - enabled: 0
     path: Assets/Scenes/10Inventory.unity
     guid: 7b80a0fe811576a4b8a06ec1504aaf06
