@@ -10,6 +10,8 @@ TagManager:
   - flower2
   - flower3
   - flower4
+  - baseSDK
+  - Boss
   layers:
   - Default
   - TransparentFX
