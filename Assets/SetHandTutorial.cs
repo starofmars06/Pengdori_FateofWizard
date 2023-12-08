@@ -9,14 +9,9 @@ public class SetHandTutorial : MonoBehaviour
     {
         PlayerPrefs.SetInt("HandTutorial", 0);
 
-        PlayerPrefs.SetInt("Potion1", 1);
-        PlayerPrefs.SetInt("Potion2", 1);
-        PlayerPrefs.SetInt("Potion3", 1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //초기 테스팅을 위한 값.
+        //PlayerPrefs.SetInt("Potion1", 1);
+        //PlayerPrefs.SetInt("Potion2", 1);
+        //PlayerPrefs.SetInt("Potion3", 1);
     }
 }
