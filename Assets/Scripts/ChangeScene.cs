@@ -27,4 +27,9 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("09_1HandTracking_Test");
     }
+
+    public void SwitchToInventoryScene()
+    {
+        SceneManager.LoadScene("10Inventory");
+    }
 }
