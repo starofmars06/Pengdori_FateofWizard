@@ -130,5 +130,29 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("09_2HandTracking_Tutorial 3");
     }
 
+    //Plant 도움말 관련 전환
+    public void gotoPlantTutorial_1()
+    {
+        SceneManager.LoadScene("06_5Plant_Tutorial1");
+    }
 
+    public void gotoPlantTutorial_2()
+    {
+        SceneManager.LoadScene("06_5Plant_Tutorial2");
+    }
+
+    public void gotoPlantTutorial_3()
+    {
+        SceneManager.LoadScene("06_5Plant_Tutorial3");
+    }
+
+    public void gotoPlantTutorial_4()
+    {
+        SceneManager.LoadScene("06_5Plant_Tutorial4");
+    }
+
+    public void gotoPlantTutorial_5()
+    {
+        SceneManager.LoadScene("06_5Plant_Tutorial5");
+    }
 }
