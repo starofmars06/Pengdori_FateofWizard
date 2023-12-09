@@ -163,6 +163,14 @@ public class ChangeScene : MonoBehaviour
 
     public void potionTuto_1()
     {
+        if (SceneManager.GetActiveScene().name == "04_2Tutorials")
+        {
+            PlayerPrefs.SetInt("TransitionValue", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("TransitionValue", 2);
+        }
         SceneManager.LoadScene("07_5PotionTutorial1");
     }
     public void potionTuto_2()
@@ -172,5 +180,22 @@ public class ChangeScene : MonoBehaviour
     public void potionTuto_3()
     {
         SceneManager.LoadScene("07_5PotionTutorial3");
+    }
+
+    public void potionTutoBack()
+    {
+        int transitionValue = PlayerPrefs.GetInt("TransitionValue");
+
+        if (transitionValue == 1)
+        {
+            SceneManager.LoadScene("04_2Tutorials");
+        }
+        else if (transitionValue == 2)
+        {
+            SceneManager.LoadScene("07_0PotionScene");
+        }
+
+        PlayerPrefs.DeleteKey("TransitionValue");
+
     }
 }
