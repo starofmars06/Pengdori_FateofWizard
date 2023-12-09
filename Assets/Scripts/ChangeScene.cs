@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public void SwitchToTutorial()
+    {
+        SceneManager.LoadScene("04_2Tutorials");
+    }
+
     public void SwitchToLobby()
     {
         SceneManager.LoadScene("05Lobby");
