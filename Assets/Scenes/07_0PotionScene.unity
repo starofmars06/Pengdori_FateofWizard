@@ -452,6 +452,7 @@ MonoBehaviour:
   Cauldron: {fileID: 633683762}
   rotatei: 0
   num: 0
+  count: 0
   name: 
   FlowerNum: {fileID: 0}
   res: {fileID: 1352387850}
@@ -1544,7 +1545,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 816360563}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: gotoPlantTutorial_1
+        m_MethodName: potionTuto_1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

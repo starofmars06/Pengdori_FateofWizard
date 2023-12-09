@@ -72,6 +72,15 @@ EditorBuildSettings:
     path: Assets/Scenes/07_4PotionFailScene.unity
     guid: f65d94b7720068e4e991683a7323fd18
   - enabled: 1
+    path: Assets/Scenes/07_5PotionTutorial1.unity
+    guid: 35afe990d1ab1ea49831565fe77dde16
+  - enabled: 1
+    path: Assets/Scenes/07_5PotionTutorial2.unity
+    guid: b977de355b217ea41b801901a5116831
+  - enabled: 1
+    path: Assets/Scenes/07_5PotionTutorial3.unity
+    guid: 19684192d4b0a7e4eaf765bb5016f5b5
+  - enabled: 1
     path: Assets/Scenes/08_1Fight_Test.unity
     guid: 4a4273433e35d2045ace3ba2e765a140
   - enabled: 1

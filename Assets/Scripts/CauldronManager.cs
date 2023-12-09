@@ -11,21 +11,33 @@ public class CauldronManager : MonoBehaviour
     private Vector3 currentAcceleration;
     private Vector3 deltaAcceleration;
 
+    private bool isMixed;
+
+    public int Rinit;
+    public int Binit;
+    public int Yinit;
+
     public int RmixPlant = 0;
     public int BmixPlant = 0;
     public int YmixPlant = 0;
 
+    FlowerMove FM = FindObjectOfType<FlowerMove>();
+
     // Start is called before the first frame update
     void Start()
     {
+        isMixed = false;
         acceleration = Input.acceleration;
         currentAcceleration = Input.acceleration;
+        RmixPlant = PlayerPrefs.GetInt("PlantPinkNum");
+        BmixPlant = PlayerPrefs.GetInt("PlantOrangeNum");
+        YmixPlant = PlayerPrefs.GetInt("PlantSkyblueNum");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         currentAcceleration = Input.acceleration;
 
         deltaAcceleration = currentAcceleration - acceleration;
@@ -33,8 +45,15 @@ public class CauldronManager : MonoBehaviour
         if (deltaAcceleration.sqrMagnitude >= shakeThreshold1 * shakeThreshold1)
         {
             Mix();
+            isMixed = true;
         }
         acceleration = currentAcceleration;
+
+        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("07_0PotionScene") && isMixed == false){
+            PlayerPrefs.SetInt("PlayerPinkNum", RmixPlant);
+            PlayerPrefs.SetInt("PlayerOrangeNum", BmixPlant);
+            PlayerPrefs.SetInt("PlayerSkyblueNum", YmixPlant);
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -46,6 +65,7 @@ public class CauldronManager : MonoBehaviour
             pn--;
             PlayerPrefs.SetInt("PlantPinkNum", pn);
             RmixPlant++;
+            FM.count++;
         }
         else if (other.CompareTag("BlueCube"))
         {
@@ -53,6 +73,7 @@ public class CauldronManager : MonoBehaviour
             on--;
             PlayerPrefs.SetInt("PlantOrangeNum", on);
             BmixPlant++;
+            FM.count++;
         }
         else if (other.CompareTag("YellowCube"))
         {
@@ -60,6 +81,7 @@ public class CauldronManager : MonoBehaviour
             sn--;
             PlayerPrefs.SetInt("PlantSkyblueNum", sn);
             YmixPlant++;
+            FM.count++;
         }
         other.gameObject.SetActive(false);
     }

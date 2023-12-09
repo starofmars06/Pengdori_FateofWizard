@@ -155,4 +155,17 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("06_5Plant_Tutorial5");
     }
+
+    public void potionTuto_1()
+    {
+        SceneManager.LoadScene("07_5PotionTutorial1");
+    }
+    public void potionTuto_2()
+    {
+        SceneManager.LoadScene("07_5PotionTutorial2");
+    }
+    public void potionTuto_3()
+    {
+        SceneManager.LoadScene("07_5PotionTutorial3");
+    }
 }

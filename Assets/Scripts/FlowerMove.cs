@@ -14,6 +14,8 @@ public class FlowerMove : MonoBehaviour
     public int rotatei = 0;
     public int num;
 
+    public int count;
+
     public string name;
 
     public Text FlowerNum;
