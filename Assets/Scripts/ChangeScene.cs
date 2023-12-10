@@ -143,6 +143,14 @@ public class ChangeScene : MonoBehaviour
     //Plant 도움말 관련 전환
     public void gotoPlantTutorial_1()
     {
+        if (SceneManager.GetActiveScene().name == "04_2Tutorials")
+        {
+            PlayerPrefs.SetInt("TutoV", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("TutoV", 2);
+        }
         SceneManager.LoadScene("06_5Plant_Tutorial1");
     }
 
@@ -174,6 +182,22 @@ public class ChangeScene : MonoBehaviour
     public void gotoPlantTutorial_7()
     {
         SceneManager.LoadScene("06_5Plant_Tutorial7");
+    }
+
+    public void plantTutoBack()
+    {
+        int tutov = PlayerPrefs.GetInt("TutoV");
+
+        if (tutov == 1)
+        {
+            SceneManager.LoadScene("04_2Tutorials");
+        }
+        else if (tutov == 2)
+        {
+            SceneManager.LoadScene("06_0Plant");
+        }
+
+        PlayerPrefs.DeleteKey("TutoV");
     }
 
     //
@@ -214,5 +238,6 @@ public class ChangeScene : MonoBehaviour
         PlayerPrefs.DeleteKey("TransitionValue");
 
     }
+
 
 }

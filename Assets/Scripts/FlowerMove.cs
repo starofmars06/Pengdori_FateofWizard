@@ -32,6 +32,8 @@ public class FlowerMove : MonoBehaviour
 
     public float resetTime = 3.0f;
 
+    CauldronManager CM;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,8 @@ public class FlowerMove : MonoBehaviour
         Redflower.SetActive(true);
         Yellowflower.SetActive(false);
         Blueflower.SetActive(false);
+
+        CM = FindObjectOfType<CauldronManager>();
 
         rb = Redflower.GetComponent<Rigidbody>();
         rb.isKinematic = true;
@@ -126,17 +130,17 @@ public class FlowerMove : MonoBehaviour
         if (flower == Redflower)
         {
             name = "PlantPinkNum";
-            num = PlayerPrefs.GetInt("PlantPinkNum");
+            num = CM.Rinit;
         }
         else if (flower == Blueflower)
         {
             name = "PlantOrangeNum";
-            num = PlayerPrefs.GetInt("PlantOrangeNum");
+            num = CM.Binit;
         }
         else if (flower == Yellowflower)
         {
             name = "PlantSkyblueNum";
-            num = PlayerPrefs.GetInt("PlantSkyblueNum");
+            num = CM.Yinit;
         }
         res.text = num.ToString();
     }
@@ -199,8 +203,4 @@ public class FlowerMove : MonoBehaviour
         isReady = true;
     }
 
-    public void Return()
-    {
-        SceneManager.LoadScene("05Lobby");
-    }
 }

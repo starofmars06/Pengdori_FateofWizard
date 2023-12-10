@@ -26,6 +26,8 @@ public class CauldronManager : MonoBehaviour
     private int magicPowerNum;
     private int magicPowerGet;
 
+    private string currentScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,8 @@ public class CauldronManager : MonoBehaviour
 
         FM = FindObjectOfType<FlowerMove>();
         FM.count = 0;
+
+        currentScene = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -66,25 +70,19 @@ public class CauldronManager : MonoBehaviour
 
         if (other.CompareTag("RedCube"))
         {
-            int pn = PlayerPrefs.GetInt("PlantPinkNum");
-            pn--;
-            PlayerPrefs.SetInt("PlantPinkNum", pn);
+            Rinit--;
             RmixPlant++;
             FM.count++;
         }
         else if (other.CompareTag("BlueCube"))
         {
-            int on = PlayerPrefs.GetInt("PlantOrangeNum");
-            on--;
-            PlayerPrefs.SetInt("PlantOrangeNum", on);
+            Binit--;
             BmixPlant++;
             FM.count++;
         }
         else if (other.CompareTag("YellowCube"))
         {
-            int sn = PlayerPrefs.GetInt("PlantSkyblueNum");
-            sn--;
-            PlayerPrefs.SetInt("PlantSkyblueNum", sn);
+            Yinit--;
             YmixPlant++;
             FM.count++;
         }
@@ -94,6 +92,10 @@ public class CauldronManager : MonoBehaviour
     void Mix()
     {
         FM.count = 0;
+        PlayerPrefs.SetInt("PlantPinkNum", Rinit);
+        PlayerPrefs.SetInt("PlantOrangeNum", Binit);
+        PlayerPrefs.SetInt("PlantYellowNum", Yinit);
+
         if (RmixPlant == 2 && BmixPlant == 1)
         {
             PlayerPrefs.SetInt("Potion1", PlayerPrefs.GetInt("Potion1") + 1);

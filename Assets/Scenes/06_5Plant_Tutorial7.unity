@@ -647,7 +647,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 948714151}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: SwitchToMagicPlantScene
+        m_MethodName: plantTutoBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
