@@ -59,11 +59,6 @@ public class CauldronManager : MonoBehaviour
         }
         acceleration = currentAcceleration;
 
-        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("07_0PotionScene") && isMixed == false){
-            PlayerPrefs.SetInt("PlayerPinkNum", Rinit);
-            PlayerPrefs.SetInt("PlayerOrangeNum", Binit);
-            PlayerPrefs.SetInt("PlayerSkyblueNum", Yinit);
-        }
     }
 
     void OnTriggerEnter(Collider other)
