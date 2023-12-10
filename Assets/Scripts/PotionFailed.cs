@@ -19,7 +19,7 @@ public class PotionFailed : MonoBehaviour
 
         if (Input.touchCount > 0)
         {
-            SceneManager.LoadScene("PotionScene");
+            SceneManager.LoadScene("07_0PotionScene");
         }
     }
 

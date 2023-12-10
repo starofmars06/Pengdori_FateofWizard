@@ -21,7 +21,10 @@ public class CauldronManager : MonoBehaviour
     public int BmixPlant = 0;
     public int YmixPlant = 0;
 
-    FlowerMove FM = FindObjectOfType<FlowerMove>();
+    private FlowerMove FM;
+
+    private int magicPowerNum;
+    private int magicPowerGet;
 
     // Start is called before the first frame update
     void Start()
@@ -29,9 +32,16 @@ public class CauldronManager : MonoBehaviour
         isMixed = false;
         acceleration = Input.acceleration;
         currentAcceleration = Input.acceleration;
-        RmixPlant = PlayerPrefs.GetInt("PlantPinkNum");
-        BmixPlant = PlayerPrefs.GetInt("PlantOrangeNum");
-        YmixPlant = PlayerPrefs.GetInt("PlantSkyblueNum");
+        Rinit = PlayerPrefs.GetInt("PlantPinkNum");
+        Binit = PlayerPrefs.GetInt("PlantOrangeNum");
+        Yinit = PlayerPrefs.GetInt("PlantSkyblueNum");
+
+        RmixPlant = 0;
+        BmixPlant = 0;
+        YmixPlant = 0;
+
+        FM = FindObjectOfType<FlowerMove>();
+        FM.count = 0;
     }
 
     // Update is called once per frame
@@ -50,9 +60,9 @@ public class CauldronManager : MonoBehaviour
         acceleration = currentAcceleration;
 
         if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("07_0PotionScene") && isMixed == false){
-            PlayerPrefs.SetInt("PlayerPinkNum", RmixPlant);
-            PlayerPrefs.SetInt("PlayerOrangeNum", BmixPlant);
-            PlayerPrefs.SetInt("PlayerSkyblueNum", YmixPlant);
+            PlayerPrefs.SetInt("PlayerPinkNum", Rinit);
+            PlayerPrefs.SetInt("PlayerOrangeNum", Binit);
+            PlayerPrefs.SetInt("PlayerSkyblueNum", Yinit);
         }
     }
 
@@ -88,16 +98,32 @@ public class CauldronManager : MonoBehaviour
 
     void Mix()
     {
+        FM.count = 0;
         if (RmixPlant == 2 && BmixPlant == 1)
         {
+            PlayerPrefs.SetInt("Potion1", PlayerPrefs.GetInt("Potion1") + 1);
+            magicPowerGet = 10;
+            PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
+            magicPowerNum = PlayerPrefs.GetInt("MagicPower");
+            PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);
             SceneManager.LoadScene("07_1RedPotionCreateScene");
         }
         else if (BmixPlant == 2)
         {
+            PlayerPrefs.SetInt("Potion2", PlayerPrefs.GetInt("Potion2") + 1);
+            magicPowerGet = 10;
+            PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
+            magicPowerNum = PlayerPrefs.GetInt("MagicPower");
+            PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);
             SceneManager.LoadScene("07_2YellowPotionCreateScene");
         }
         else if (RmixPlant == 1 && YmixPlant == 2)
         {
+            PlayerPrefs.SetInt("Potion3", PlayerPrefs.GetInt("Potion3") + 1);
+            magicPowerGet = 10;
+            PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
+            magicPowerNum = PlayerPrefs.GetInt("MagicPower");
+            PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);
             SceneManager.LoadScene("07_3PurplePotionCreateScene");
         }
         else{

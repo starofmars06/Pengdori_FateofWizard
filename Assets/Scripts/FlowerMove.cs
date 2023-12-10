@@ -79,6 +79,10 @@ public class FlowerMove : MonoBehaviour
                         {
                             
                         }
+                        else if (count >= 3)
+                        {
+                            
+                        }
                         else
                         {
                             FlowerThrow();
