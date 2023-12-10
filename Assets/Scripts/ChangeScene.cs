@@ -18,6 +18,11 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("06_0Plant");
     }
 
+    public void SwitchToPlantTutorial()
+    {
+        SceneManager.LoadScene("06_5Plant_Tutorial1");
+    }
+
     public void SwitchToMagicPotionScene()
     {
         SceneManager.LoadScene("07_0PotionScene");
