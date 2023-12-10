@@ -11,18 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/02Title.unity
     guid: 353bc977ee7bf994e916e328c994fc09
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/03Main.unity
     guid: a7719415b6cb5e24eb1fdb66bd61e88e
   - enabled: 1
-    path: Assets/Scenes/04_1Intro.unity
+    path: Assets/Scenes/03Intro.unity
     guid: 38e0f1d430b0d8742a9b885aff2c27c0
-  - enabled: 1
-    path: Assets/Scenes/04_2Tutorials.unity
-    guid: be096b2444a31c1418ce5c4667b27cfa
   - enabled: 1
     path: Assets/Scenes/05Lobby.unity
     guid: fba9f45ef432b6a439d331a73529a9b9
+  - enabled: 1
+    path: Assets/Scenes/04_2Tutorials.unity
+    guid: 529dfb5a66be99e429a42d9a9fedd05a
   - enabled: 1
     path: Assets/Scenes/06_0Plant.unity
     guid: 8d99754ae0c2fdd40a2c9adf251f6d50
@@ -53,6 +53,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/06_5Plant_Tutorial5.unity
     guid: 175ccb8e732af3246ab788bc68eb32bb
+  - enabled: 1
+    path: Assets/Scenes/06_5Plant_Tutorial6.unity
+    guid: 5c139b59fa2eb2642ac729e8b4b4fd5b
+  - enabled: 1
+    path: Assets/Scenes/06_5Plant_Tutorial7.unity
+    guid: a7e1f120d8d51d646a0ec1ba767cd15e
   - enabled: 1
     path: Assets/Scenes/06_9Plant_result.unity
     guid: ab89672e4bda4504ebd2e52f1a24f5ab

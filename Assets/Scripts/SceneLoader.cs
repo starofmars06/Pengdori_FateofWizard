@@ -77,7 +77,7 @@ public class SceneLoader : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         //씬 적용하기
-        SceneManager.LoadScene("03Main");
+        SceneManager.LoadScene("03Intro");
     }
 
     //일반 전투 후 이동
