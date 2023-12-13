@@ -8,6 +8,13 @@ public class SceneLoader : MonoBehaviour
     public Animator transition;
     public float transitionTime = 2f;
 
+    int hasSaveData;
+
+    void Start()
+    {
+        hasSaveData = PlayerPrefs.GetInt("SaveData");
+    }
+
     void Update()
     {
         // 01. 인트로 시퀀스에 대한 화면 전환
@@ -65,10 +72,19 @@ public class SceneLoader : MonoBehaviour
     
     public void LoadMainScene()
     {
-        StartCoroutine(LoadMain());
+        if (hasSaveData == 1)
+        {
+            //있다면 복귀 환영 문구부터
+            StartCoroutine(LoadMain1());
+        }
+        else
+        {
+            //세이브 데이터가 없으면 첫 인트로부터
+            StartCoroutine(LoadMain2());
+        }
     }
 
-    IEnumerator LoadMain()
+    IEnumerator LoadMain2()
     {
         //애니메이션 시작
         transition.SetTrigger("Start");
@@ -77,7 +93,19 @@ public class SceneLoader : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         //씬 적용하기
-        SceneManager.LoadScene("03Intro");
+        SceneManager.LoadScene("03_1Intro");
+    }
+
+    IEnumerator LoadMain1()
+    {
+        //애니메이션 시작
+        transition.SetTrigger("Start");
+
+        //기다리기
+        yield return new WaitForSeconds(transitionTime);
+
+        //씬 적용하기
+        SceneManager.LoadScene("03_2Intro");
     }
 
     //일반 전투 후 이동

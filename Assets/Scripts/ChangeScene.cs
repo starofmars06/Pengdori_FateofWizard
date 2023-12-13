@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class ChangeScene : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class ChangeScene : MonoBehaviour
 
     public void SwitchToMagicPlantScene()
     {
+        PlayerPrefs.SetString("LastPlantCheckDate", DateTime.Now.ToString("yyyy-MM-dd"));
+
+
         SceneManager.LoadScene("06_0Plant");
     }
 
@@ -30,6 +34,9 @@ public class ChangeScene : MonoBehaviour
 
     public void SwitchToMagicFightScene()
     {
+        // PlayerPrefs에 오늘의 날짜를 저장
+        PlayerPrefs.SetString("LastFightCheckDate", DateTime.Now.ToString("yyyy-MM-dd"));
+
         SceneManager.LoadScene("08_1Fight_Test");
     }
 

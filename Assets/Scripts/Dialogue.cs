@@ -17,6 +17,8 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt("SaveData", 0);
+
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -66,7 +68,15 @@ public class Dialogue : MonoBehaviour
         {
             gameObject.SetActive(false);
 
-            if (SceneManager.GetActiveScene().name == "03Intro")
+            if (SceneManager.GetActiveScene().name == "03_1Intro")
+            {
+                //SaveData라는 값을 저장해서 다음번에는 03_2Intro로 넘어가게 된다.
+                PlayerPrefs.SetInt("SaveData", 1);
+
+
+                SceneManager.LoadScene("05Lobby");
+            }
+            else if (SceneManager.GetActiveScene().name == "03_2Intro")
             {
                 SceneManager.LoadScene("05Lobby");
             }

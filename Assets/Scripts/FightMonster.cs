@@ -91,6 +91,12 @@ public class FightMonster: MonoBehaviour
         //몬스터 체력이 0이 되면 이동함.
         if(monsterHealth <= 0)
         {
+            //최종적으로 사용한 포션양을 기록하는 부분.
+            PlayerPrefs.SetInt("Potion1", MagicPotion1);
+            PlayerPrefs.SetInt("Potion2", MagicPotion2);
+            PlayerPrefs.SetInt("Potion3", MagicPotion3);
+
+            //전투 승리 화면으로 넘어감.
             SceneManager.LoadScene("08_2Fight_Win");
         }
 
