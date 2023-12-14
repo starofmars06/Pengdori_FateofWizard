@@ -44,7 +44,7 @@ public class GetWantedFlower : MonoBehaviour
                                 PlayerPrefs.SetInt("PlantPinkRandom", 0);
                                 PlayerPrefs.SetInt("PlantSkyblueRandom", 0);
 
-                                magicPowerGet = 10;// MagicPower 얻는 부분
+                                magicPowerGet = 100;// MagicPower 얻는 부분
                                 PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
                                 magicPowerNum = PlayerPrefs.GetInt("MagicPower");
                                 PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet); 
@@ -60,7 +60,7 @@ public class GetWantedFlower : MonoBehaviour
                                 PlayerPrefs.SetInt("PlantPinkRandom", 0);
                                 PlayerPrefs.SetInt("PlantOrangeRandom", 0);
 
-                                magicPowerGet = 10;// MagicPower 얻는 부분
+                                magicPowerGet = 100;// MagicPower 얻는 부분
                                 PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
                                 magicPowerNum = PlayerPrefs.GetInt("MagicPower");
                                 PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);
@@ -76,7 +76,7 @@ public class GetWantedFlower : MonoBehaviour
                                 PlayerPrefs.SetInt("PlantSkyblueRandom", 0);
                                 PlayerPrefs.SetInt("PlantOrangeRandom", 0);
 
-                                magicPowerGet = 10;// MagicPower 얻는 부분
+                                magicPowerGet = 100;// MagicPower 얻는 부분
                                 PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
                                 magicPowerNum = PlayerPrefs.GetInt("MagicPower");
                                 PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);
