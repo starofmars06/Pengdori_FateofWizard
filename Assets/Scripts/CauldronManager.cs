@@ -99,7 +99,7 @@ public class CauldronManager : MonoBehaviour
         if (RmixPlant == 2 && BmixPlant == 1)
         {
             PlayerPrefs.SetInt("Potion1", PlayerPrefs.GetInt("Potion1") + 1);
-            magicPowerGet = 10;
+            magicPowerGet = 100;
             PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
             magicPowerNum = PlayerPrefs.GetInt("MagicPower");
             PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);
@@ -108,7 +108,7 @@ public class CauldronManager : MonoBehaviour
         else if (BmixPlant == 2)
         {
             PlayerPrefs.SetInt("Potion2", PlayerPrefs.GetInt("Potion2") + 1);
-            magicPowerGet = 10;
+            magicPowerGet = 100;
             PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
             magicPowerNum = PlayerPrefs.GetInt("MagicPower");
             PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);
@@ -117,7 +117,7 @@ public class CauldronManager : MonoBehaviour
         else if (RmixPlant == 1 && YmixPlant == 2)
         {
             PlayerPrefs.SetInt("Potion3", PlayerPrefs.GetInt("Potion3") + 1);
-            magicPowerGet = 10;
+            magicPowerGet = 100;
             PlayerPrefs.SetInt("MagicPowerGet", magicPowerGet);
             magicPowerNum = PlayerPrefs.GetInt("MagicPower");
             PlayerPrefs.SetInt("MagicPower", magicPowerNum + magicPowerGet);

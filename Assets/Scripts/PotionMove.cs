@@ -28,17 +28,17 @@ public class PotionMove : MonoBehaviour
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("07_1RedPotionCreateScene"))
         {
             result.text = "별빛 반짝 마법약이 완성되었습니다.";
-            touch.text = "경험치 10 추가";
+            touch.text = "경험치 100 추가";
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("07_2YellowPotionCreateScene"))
         {
             result.text = "푸른 전기 마법약이 완성되었습니다.";
-            touch.text = "경험치 10 추가";
+            touch.text = "경험치 100 추가";
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("07_3PurplePotionCreateScene"))
         {
             result.text = "포털 불꽃 마법약이 완성되었습니다.";
-            touch.text = "경험치 10 추가";
+            touch.text = "경험치 100 추가";
         }
 
     }
@@ -46,8 +46,7 @@ public class PotionMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
+
         StartCoroutine(Waittime());
     }
 }

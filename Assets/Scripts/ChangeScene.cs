@@ -246,5 +246,10 @@ public class ChangeScene : MonoBehaviour
 
     }
 
+    public void potionHint()
+    {
+        SceneManager.LoadScene("07_6PotionHint");
+    }
+
 
 }
