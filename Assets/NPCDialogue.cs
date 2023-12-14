@@ -9,7 +9,7 @@ public class NPCDialogue : MonoBehaviour
 
     // 세 가지 기본 대화
     private string[] npcDialogs = {
-        "도움말을 확인하는 것도 좋지.",
+        "어렵다면 도움말을 확인하는 것도 좋지.",
         "힘들 때는 쉬어가는 것도 미덕이야.",
         "마법약이나 만들러 갈래?"
     };
