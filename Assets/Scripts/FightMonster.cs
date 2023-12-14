@@ -26,6 +26,9 @@ public class FightMonster: MonoBehaviour
     //일반 몬스터 체력
     int monsterHealth = 5;
 
+    //타이머 비활성화를 위해서
+    public GameObject timer;
+
     void Start()
     {
         ChangeInfoText();
@@ -91,6 +94,8 @@ public class FightMonster: MonoBehaviour
         //몬스터 체력이 0이 되면 이동함.
         if(monsterHealth <= 0)
         {
+            timer.SetActive(false);
+
             //최종적으로 사용한 포션양을 기록하는 부분.
             PlayerPrefs.SetInt("Potion1", MagicPotion1);
             PlayerPrefs.SetInt("Potion2", MagicPotion2);
