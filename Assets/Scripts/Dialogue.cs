@@ -66,7 +66,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
 
             if (SceneManager.GetActiveScene().name == "03_1Intro")
             {

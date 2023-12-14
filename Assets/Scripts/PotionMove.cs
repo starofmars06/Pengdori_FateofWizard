@@ -25,13 +25,6 @@ public class PotionMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("07_1RedPotionCreateScene"))
         {
             result.text = "별빛 반짝 마법약이 완성되었습니다.";
@@ -47,6 +40,13 @@ public class PotionMove : MonoBehaviour
             result.text = "포털 불꽃 마법약이 완성되었습니다.";
             touch.text = "경험치 10 추가";
         }
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
         
         StartCoroutine(Waittime());
     }

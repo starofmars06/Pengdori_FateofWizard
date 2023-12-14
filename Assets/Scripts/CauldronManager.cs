@@ -94,7 +94,7 @@ public class CauldronManager : MonoBehaviour
         FM.count = 0;
         PlayerPrefs.SetInt("PlantPinkNum", Rinit);
         PlayerPrefs.SetInt("PlantOrangeNum", Binit);
-        PlayerPrefs.SetInt("PlantYellowNum", Yinit);
+        PlayerPrefs.SetInt("PlantSkyblueNum", Yinit);
 
         if (RmixPlant == 2 && BmixPlant == 1)
         {
