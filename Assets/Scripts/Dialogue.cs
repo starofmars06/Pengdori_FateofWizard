@@ -17,8 +17,6 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("SaveData", 0);
-
         textComponent.text = string.Empty;
         StartDialogue();
     }

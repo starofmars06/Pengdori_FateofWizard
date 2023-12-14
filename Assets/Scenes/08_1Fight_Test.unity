@@ -161,6 +161,7 @@ MonoBehaviour:
   potion1: {fileID: 328102429}
   potion2: {fileID: 1894428933}
   potion3: {fileID: 1794632155}
+  timer: {fileID: 1569455487}
 --- !u!4 &99529741
 Transform:
   m_ObjectHideFlags: 0

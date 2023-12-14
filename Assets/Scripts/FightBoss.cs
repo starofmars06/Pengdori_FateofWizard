@@ -89,7 +89,7 @@ public class FightBoss : MonoBehaviour
 
 
         //몬스터 체력이 0이 되면 이동함.
-        if (monsterHealth <= 0)
+        if (monsterHealth < 0)
         {
             SceneManager.LoadScene("11_3Win");
         }

@@ -18,7 +18,7 @@ public class MagicPowerPrint : MonoBehaviour
     void UpdateMagicPowerGetUI()
     {
         current_magicPower = PlayerPrefs.GetInt("MagicPower");
-        update_magicPower = 200 + current_magicPower;
+        update_magicPower = 500 + current_magicPower;
 
         PlayerPrefs.SetInt("MagicPower", update_magicPower);
 

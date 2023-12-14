@@ -92,7 +92,7 @@ public class FightMonster: MonoBehaviour
 
 
         //몬스터 체력이 0이 되면 이동함.
-        if(monsterHealth <= 0)
+        if(monsterHealth < 0)
         {
             timer.SetActive(false);
 
