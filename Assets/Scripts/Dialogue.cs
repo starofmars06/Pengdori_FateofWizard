@@ -73,7 +73,6 @@ public class Dialogue : MonoBehaviour
                 //SaveData라는 값을 저장해서 다음번에는 03_2Intro로 넘어가게 된다.
                 PlayerPrefs.SetInt("SaveData", 1);
 
-
                 SceneManager.LoadScene("05Lobby");
             }
             else if (SceneManager.GetActiveScene().name == "03_2Intro")
