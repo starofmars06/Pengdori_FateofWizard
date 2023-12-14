@@ -161,7 +161,6 @@ MonoBehaviour:
   potion1: {fileID: 328102429}
   potion2: {fileID: 1894428933}
   potion3: {fileID: 1794632155}
-  timer: {fileID: 1569455487}
 --- !u!4 &99529741
 Transform:
   m_ObjectHideFlags: 0
@@ -1462,7 +1461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.1
-  m_Text: "\uB0A8\uC740 \uC2DC\uAC04:"
+  m_Text: 
 --- !u!114 &1069217589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1671,7 +1670,6 @@ MonoBehaviour:
   arObjectToSpawn: {fileID: 6919357880396926085, guid: ac6d2f8914d93af4098acc5be08ccabe, type: 3}
   placementIndicator: {fileID: 976713747}
   magic: {fileID: 99529739}
-  timer: {fileID: 1569455487}
 --- !u!4 &1170819745
 Transform:
   m_ObjectHideFlags: 0

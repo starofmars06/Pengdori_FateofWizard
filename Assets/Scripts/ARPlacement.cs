@@ -9,7 +9,7 @@ public class ARPlacement : MonoBehaviour
     public GameObject arObjectToSpawn;
     public GameObject placementIndicator;
     public GameObject magic;
-    public GameObject timer;
+    //public GameObject timer;
 
     private Pose PlacementPose;
     private GameObject spawnedObject;
@@ -24,7 +24,7 @@ public class ARPlacement : MonoBehaviour
 
         // 처음에 공격상태 비활성화
         magic.SetActive(false);
-        timer.SetActive(false);
+        //timer.SetActive(false);
 
     }
 
@@ -36,7 +36,7 @@ public class ARPlacement : MonoBehaviour
         {
             ARPlaceObject(); // 몬스터 생성
             magic.SetActive(true); // 공격 상태 활성화
-            timer.SetActive(true);  //타이머 상태 활성화
+            //timer.SetActive(true);  //타이머 상태 활성화
         }
 
         // 배치 위치 계산하기
