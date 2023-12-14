@@ -13,7 +13,7 @@ public class MagicPowerCal : MonoBehaviour
     {
         if (!PlayerPrefs.HasKey("PlantOrangeNum")) // (이 디바이스에 PlantOrangeNum을 한번이라도 저장한 적이 있는가)의 반대
         {
-            PlayerPrefs.SetInt("PlantOrangeNum", 0); // 이 디바이스에 PlantOrangeNum을 저장한 적이 없다면 0 저장
+            PlayerPrefs.SetInt("PlantOrangeNum", 2); // 이 디바이스에 PlantOrangeNum을 저장한 적이 없다면 0 저장
         }
         if (!PlayerPrefs.HasKey("PlantOrangeRandom"))
         {
@@ -22,7 +22,7 @@ public class MagicPowerCal : MonoBehaviour
 
         if (!PlayerPrefs.HasKey("PlantSkyblueNum")) // (이 디바이스에 PlantSkyblueNum을 한번이라도 저장한 적이 있는가)의 반대
         {
-            PlayerPrefs.SetInt("PlantSkyblueNum", 0); // 이 디바이스에 PlantSkyblueNum을 저장한 적이 없다면 0 저장
+            PlayerPrefs.SetInt("PlantSkyblueNum", 2); // 이 디바이스에 PlantSkyblueNum을 저장한 적이 없다면 0 저장
         }
         if (!PlayerPrefs.HasKey("PlantSkyblueRandom"))
         {
@@ -31,7 +31,7 @@ public class MagicPowerCal : MonoBehaviour
 
         if (!PlayerPrefs.HasKey("PlantPinkNum")) // (이 디바이스에 PlantPinkNum을 한번이라도 저장한 적이 있는가)의 반대
         {
-            PlayerPrefs.SetInt("PlantPinkNum", 0); // 이 디바이스에 PlantPinkNum을 저장한 적이 없다면 0 저장
+            PlayerPrefs.SetInt("PlantPinkNum", 2); // 이 디바이스에 PlantPinkNum을 저장한 적이 없다면 0 저장
         }
         if (!PlayerPrefs.HasKey("PlantPinkRandom"))
         {
@@ -40,15 +40,15 @@ public class MagicPowerCal : MonoBehaviour
 
         if (!PlayerPrefs.HasKey("Potion1")) //magic potion
         {
-            PlayerPrefs.SetInt("Potion1", 0); 
+            PlayerPrefs.SetInt("Potion1", 2); 
         }
         if (!PlayerPrefs.HasKey("Potion2"))
         {
-            PlayerPrefs.SetInt("Potion2", 0);
+            PlayerPrefs.SetInt("Potion2", 2);
         }
         if (!PlayerPrefs.HasKey("Potion3"))
         {
-            PlayerPrefs.SetInt("Potion3", 0);
+            PlayerPrefs.SetInt("Potion3", 2);
         }
 
 
